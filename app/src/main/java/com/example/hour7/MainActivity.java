@@ -40,11 +40,11 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
-            @Override
-            public void onAnimationEnd(Animation animation) {
-                startActivity(new Intent(MainActivity.this, MainActivity.class));
-                MainActivity.this.finish();
-            }
+                @Override
+                public void onAnimationEnd(Animation animation) {
+                    startActivity(new Intent(MainActivity.this, MenuActivity.class));
+                    MainActivity.this.finish();
+                }
 
             @Override
             public void onAnimationRepeat(Animation animation) {
